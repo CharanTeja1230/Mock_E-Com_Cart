@@ -1,0 +1,26 @@
+{
+  "name": "vibe-commerce-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --watch . --ext js --exec node index.js",
+    "test": "jest --runInBand",
+    "show": "node scripts/show-api.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "roots": ["<rootDir>"]
+  }
+}
